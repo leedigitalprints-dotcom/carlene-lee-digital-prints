@@ -1,0 +1,124 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lee Digital Prints and Media</title>
+	
+<style>
+	div {border:1px solid red;}
+	body {
+		margin:0;
+		font-family:"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
+	}
+
+	h1 {
+		margin-top:50px;
+		text-align: center;
+	}
+
+	img {
+		width:100%;
+		height:inherit;
+	}
+	
+	#wrapper {
+		position: relative;
+		width:1000px;
+		margin: 0 auto;
+	}
+	#banner {
+		background-image: url('file:///C|/Users/badav/OneDrive/Humber/2025-2026/Semester 1/MDCP 102 - Web Design/floats_and_flex/columns.jpg');
+		background-position: center;
+		height:200px;
+	}
+
+	#navigation ul {
+        display: flex;
+        justify-content: space-evenly;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+    #navigation ul li a{
+        color: black;
+        font-weight: bold;
+        text-decoration: none;
+        padding: 10px 20px;
+        background-color: #ddd;
+        display: block;
+    }
+    main {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+    }
+
+	#content {
+		padding: 10px;
+	}
+	#sidebar {
+		
+	}
+	
+	#footer {
+		
+	}
+
+	.caption {
+		font-size:0.8em;
+	}\
+
+/*-----------------------desktop-----------------------*/
+@media (min-width: 1280px){
+}
+
+/*-----------------------tablet-----------------------*/
+
+@media (min-width: 801px) and (max-width: 1279px){
+}
+	
+/*-----------------------mobile-----------------------*/
+@media (max-width: 800px){
+	#sidebar{
+		
+	}
+}
+
+
+
+
+</style>
+	
+</head>
+
+<body>
+<div id="wrapper">
+	
+	<div id="banner">
+		<h1>A brief story of Lorem Ipsum</h1>
+	</div>
+	
+	<div id="navigation">
+		<ul>
+			<li><a href="#home">Home</a></li>
+			<li><a href="#news">News</a></li>
+			<li><a href="#contact">Contact</a></li>
+			<li><a href="#about">About</a></li>
+		</ul>
+	</div>
+	
+    <main>
+        <div id="content">
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p> <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        <p>This text was sourced from <a href="http://lipsum.com">Lipsum.com</a></p>
+        </div>
+        <div id="sidebar">
+            <img src="file:///C|/Users/badav/OneDrive/Humber/2025-2026/Semester 1/MDCP 102 - Web Design/floats_and_flex/cicero.jpg" alt="A bust of Cicero" />
+            <div class="caption">Lorem Ipsum is derived from 'De finibus bonorum et malorum' written in the 1st Century Rome by Cicero</div>
+	</div>
+    </main>
+	<div id="footer">&copy;2022 About Lorem Ipsum</div>
+</div>
+</body>
+</html>
